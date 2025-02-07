@@ -1,11 +1,23 @@
+
 <?php
-try{
- $bdd = new PDO('pgsql:host=localhost;port=5432;dbname=owasp','postgres','Oscarlechat6');
- echo "connexion bdd OK";
+class Database {
+    private static $instance = null;
+    private $pdo;
 
-}
+    private function __construct() {
+        try {
+            $this->pdo = new PDO('mysql:host=localhost;dbname=owasp', 'root', 'Oscarlechat6');
+            $this->pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        } catch (PDOException $e) {
+            die("Database connection failed: " . $e->getMessage());
+        }
+    }
 
-catch(ErrorException $e)
-{
-    echo $e;
+    public static function getConnection() {
+        if (self::$instance === null) {
+            self::$instance = new Database();
+        }
+        return self::$instance->pdo;
+    }
 }
+?>

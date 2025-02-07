@@ -1,5 +1,5 @@
 <?php
-require_once __DIR__ . '/../database.php';
+require_once __DIR__ . 'bdd.php';
 
 class InscriptionModel {
     private $db;

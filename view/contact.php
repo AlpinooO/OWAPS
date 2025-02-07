@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inscription</title>
+    <title>Contact</title>
 </head>
 <body>
-    <h1>Inscription</h1>
-    <form action="/inscription" method="POST">
+    <h1>Nous Contacter</h1>
+    <form action="/contact" method="POST">
         <label for="nom">Nom d'utilisateur :</label>
         <input type="text" id="nom" name="nom" required>
         

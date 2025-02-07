@@ -12,9 +12,9 @@
     <nav class="bg-white shadow-md p-5 flex justify-between items-center rounded-b-lg">
         <h1 class="text-2xl font-bold text-blue-600">Mon Site</h1>
         <div>
-            <a href="index.php" class="px-4 py-2 text-blue-600">Accueil</a>
-            <a href="login.php" class="px-4 py-2 text-blue-600">Connexion</a>
-            <a href="register.php" class="px-4 py-2 text-blue-600">Inscription</a>
+            <a href="/connexion" class="px-4 py-2 text-blue-600">Connexion</a>
+            <a href="/inscription" class="px-4 py-2 text-blue-600">Inscription</a>
+            <a href="/contact" class="px-4 py-2 text-blue-600">Support</a>
         </div>
     </nav>
 

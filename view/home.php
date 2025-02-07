@@ -9,8 +9,13 @@
 </head>
 
 <body class="bg-gray-100">
-    <nav class="bg-white shadow-md p-5 flex justify-between items-center rounded-b-l">
-        <h1 class="text-2xl font-bold text-blue-600">Mon E-Commerce</h1>
+    <nav class="bg-white shadow-md p-5 flex justify-between items-center rounded-b-lg">
+        <h1 class="text-2xl font-bold text-blue-600">
+            <a href="/">
+                Mon Site
+            </a>
+        </h1>
+
         <div>
             <a href="/connexion" class="px-4 py-2 text-blue-600">Connexion</a>
             <a href="/inscription" class="px-4 py-2 text-blue-600">Inscription</a>

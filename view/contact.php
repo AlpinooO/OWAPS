@@ -1,16 +1,22 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inscription</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body class="bg-gray-100 flex flex-col min-h-screen">
 
-    <!-- Navbar -->
     <nav class="bg-white shadow-md p-5 flex justify-between items-center rounded-b-lg">
-        <h1 class="text-2xl font-bold text-blue-600">Mon Site</h1>
+        <h1 class="text-2xl font-bold text-blue-600">
+            <a href="/">
+                Mon Site
+            </a>
+        </h1>
+
         <div>
             <a href="/connexion" class="px-4 py-2 text-blue-600">Connexion</a>
             <a href="/inscription" class="px-4 py-2 text-blue-600">Inscription</a>
@@ -22,7 +28,7 @@
     <main class="flex-grow flex flex-col justify-center items-center">
         <div class="bg-white p-8 shadow-lg rounded-2xl w-full max-w-lg">
             <h2 class="text-2xl font-bold text-gray-800 text-center mb-6">Inscription</h2>
-            
+
             <!-- Formulaire d'inscription -->
             <form action="/inscription" method="POST" class="space-y-4">
                 <div>
@@ -53,4 +59,5 @@
     </footer>
 
 </body>
+
 </html>

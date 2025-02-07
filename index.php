@@ -1,5 +1,2 @@
 <?php
-
-
-include('controller/router.php');
-
+require_once __DIR__ . '/controller/router.php';

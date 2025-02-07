@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>Inscription</h1>
-    <form action="/controller/InscriptionController.php" method="POST">
+    <form action="/inscription" method="POST">
         <input type="text" name="username" placeholder="Nom d'utilisateur" required>
         <input type="email" name="email" placeholder="Email" required>
         <input type="password" name="password" placeholder="Mot de passe" required>

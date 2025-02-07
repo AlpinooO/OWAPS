@@ -27,8 +27,11 @@ $router->get('/connexion', function() {
     require __DIR__ . '/../view/connexion.php';
 });
 
-$router->get('/isncription', function() {
+$router->get('/inscription', function() {
     require __DIR__ . '/../view/inscription.php';
+});
+$router->get('/contact', function() {
+    require __DIR__ . '/../view/contact.php';
 });
 
 $router->dispatch();

@@ -15,20 +15,17 @@ class Router {
             call_user_func($this->routes[$method][$path]);
         } else {
             http_response_code(404);
-            echo "404 - Page not found ";
+            echo "<h1>404 - Page not found</h1>";
         }
     }
 }
 
-// Gestion des vues de connexion et d'inscription
 $router = new Router();
 
 $router->get('/connexion', function() {
     require __DIR__ . '/../view/connexion.php';
 });
 
-$router->get('/isncription', function() {
+$router->get('/inscription', function() {
     require __DIR__ . '/../view/inscription.php';
 });
-
-$router->dispatch();

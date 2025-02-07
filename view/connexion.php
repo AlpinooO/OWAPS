@@ -7,13 +7,9 @@
 </head>
 <body>
     <h1>Connexion</h1>
-    <form action="/connexion" method="POST">
-        <label for="username">Nom d'utilisateur :</label>
-        <input type="text" id="username" name="username" required>
-        
-        <label for="password">Mot de passe :</label>
-        <input type="password" id="password" name="password" required>
-        
+    <form action="/controller/ConnexionController.php" method="POST">
+        <input type="text" name="username" placeholder="Nom d'utilisateur" required>
+        <input type="password" name="password" placeholder="Mot de passe" required>
         <button type="submit">Se connecter</button>
     </form>
 </body>

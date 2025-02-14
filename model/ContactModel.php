@@ -1,8 +1,17 @@
 <?php
 
-include_once('bdd.php');
+require_once __DIR__ . 'bdd.php';
 
-function contacter($nom, $email, $message){
-    global $bdd;
-    return $bdd->query('INSERT INTO contact(nom, email, message) values(?,?,?)');
+class ContactModel {
+    private $db;
+
+    public function __construct() {
+        $this->db = Database::getConnection();
+    }
+
+    public function contacter($nom, $email, $message) {
+        $stmt = $this->db->prepare('INSERT INTO contact (nom, email, message) VALUES (?, ?, ?)');
+        return $stmt->execute([$nom, $email, $message]);
+    }
 }
+?>
